@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CCharlieLi/graph-route-finder.git"
+    "url": "git+https://github.com/CCharlieLi/percentile.git"
   },
   "keywords": [
     "percentile",
@@ -26,9 +26,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CCharlieLi/graph-route-finder/issues"
+    "url": "https://github.com/CCharlieLi/percentile/issues"
   },
-  "homepage": "https://github.com/CCharlieLi/graph-route-finder#readme",
+  "homepage": "https://github.com/CCharlieLi/percentile#readme",
   "dependencies": {
     "tdigest": "^0.1.1"
   },
