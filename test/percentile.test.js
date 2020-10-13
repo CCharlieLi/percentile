@@ -42,7 +42,7 @@ describe('Percentile', () => {
     p.isWindowPercentile.should.be.equal(false);
     p.percentile(0.5).should.be.closeTo(5, 0.5);
     p.percentile(0.9).should.be.closeTo(16, 0.5);
-    p.percentile(0.99).should.be.closeTo(223, 0.5);
+    p.percentile(0.99).should.be.closeTo(223, 0.6);
     // perc50: 5
     // perc90: 16
     // perc99: 223

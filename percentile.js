@@ -18,7 +18,7 @@ class Percentile {
         this.currentBucketIndex = 0;
         // Initiate window rotate data
         this.lastRotateTime = Date.now();
-        this.rotateTime = (windowLiveTimeMS / bucketsNum) || Infinity;
+        this.rotateTime = windowLiveTimeMS / bucketsNum || Infinity;
     }
     /**
      * Rotate window and get current bucket
