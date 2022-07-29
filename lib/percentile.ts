@@ -38,13 +38,7 @@ export class Percentile {
     while (this.isWindowPercentile && timeGap > this.rotateTime) {
       // Refresh current window bucket and move to next one
       this.windowBuckets[this.currentBucketIndex] = new TDigest();
-      this.currentBucketIndex++;
-
-      // Rotate if reached the end
-      this.currentBucketIndex =
-        this.currentBucketIndex >= this.windowBuckets.length
-          ? 0
-          : this.currentBucketIndex;
+      this.currentBucketIndex = (this.currentBucketIndex + 1) % this.windowBuckets.length;
 
       // Update time gap
       timeGap -= this.rotateTime;
